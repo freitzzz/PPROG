@@ -48,6 +48,7 @@ public class Ginasio {
     
     private static int magro=18;
     private static int obeso=25;
+    private static int utentes=0;
     
     /**
      * Construtor do objeto Ginasio que recebe como parametros a informação do utente.
@@ -66,6 +67,7 @@ public class Ginasio {
         this.idade=idade;
         this.altura=altura;
         this.peso=peso;
+        utentes++;
     }
     /**
      * Construtor do objeto Ginasio sem parametros.
@@ -76,6 +78,7 @@ public class Ginasio {
         idade=IDADE_NAO_DEFINIDO;
         altura=ALTURA_NAO_DEFINIDO;
         peso=PESO_NAO_DEFINIDO;
+        utentes++;
     }
     /**
      * Método que retorna o nome do utente.
@@ -114,6 +117,13 @@ public class Ginasio {
      */
     public double getPeso(){
         return peso;
+    }
+    /**
+     * Método que retorna o número de utentes.
+     * @return O número de utentes.
+     */
+    public int getUtentes(){
+        return utentes;
     }
     
     //Métodos set()
