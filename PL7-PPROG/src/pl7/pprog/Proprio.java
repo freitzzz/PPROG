@@ -44,7 +44,8 @@ public class Proprio extends RendimentoTrabalho{
     }
     @Override
     public float calcularImposto() {
-        return super.getRendimentos()*RT+super.getRendimentos()*taxaOR();
+        
+        return super.getRendimentos()*RT+(float)super.getOutrosRendimentos()*taxaOR();
     }
     public float taxaOR(){
         if(super.getRendimentos()>TAXA_OR){

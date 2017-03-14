@@ -40,7 +40,7 @@ public class Reformado extends RendimentoTrabalho{
     }
     @Override
     public float calcularImposto() {
-        return super.getRendimentos()*RT+super.getRendimentos()*OR;
+        return super.getRendimentos()*RT+(float)super.getOutrosRendimentos()*OR;
     }
     
 }

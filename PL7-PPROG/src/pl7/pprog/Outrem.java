@@ -57,7 +57,7 @@ public class Outrem extends RendimentoTrabalho{
     }
     @Override
     public float calcularImposto() {
-        return super.getRendimentos()*taxaRT()+super.getRendimentos()*OR;
+        return super.getRendimentos()*taxaRT()+(float)super.getOutrosRendimentos()*OR;
     }
     
     public float taxaRT(){

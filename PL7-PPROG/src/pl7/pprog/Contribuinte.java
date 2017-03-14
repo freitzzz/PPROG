@@ -55,7 +55,7 @@ public abstract class Contribuinte {
         return "Informação do contribuinte:\n"
                 + "Nome: "+nome+"\n"
                 + "Morada: "+morada+"\n"
-                + "Rendimentos: "+outrosRendimentos;
+                + "Outros Rendimentos: "+outrosRendimentos;
     }
     
     public abstract float calcularImposto();

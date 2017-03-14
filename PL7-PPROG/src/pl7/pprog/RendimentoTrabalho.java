@@ -31,7 +31,7 @@ public abstract class RendimentoTrabalho extends Contribuinte{
     
     @Override
     public String toString(){
-        return super.toString()+"\nRendimentos: "+rendimentos;
+        return super.toString()+"\nRendimentos de Trabalho: "+rendimentos;
     }
     @Override
     public abstract float calcularImposto();
